@@ -1,0 +1,13 @@
+{
+	"hosting": {
+		"site": "u9-sveltekit-todo-2",
+		"public": "public",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	}
+}
