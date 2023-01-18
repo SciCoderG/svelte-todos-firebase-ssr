@@ -13,8 +13,8 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"package": "svelte-kit package"
 	},
-	"exports":{
-		"." : "./"
+	"exports": {
+		".": "./"
 	},
 	"devDependencies": {
 		"@sveltejs/package": "next",
