@@ -3,8 +3,8 @@
 	import { user } from '$lib/stores';
 
 	export let isDone = false;
-	export let title: string = 'Title';
-	export let description: string = 'Description';
+	export let title = 'Title';
+	export let description = 'Description';
 	export let id: string;
 
 	function handleToggle() {

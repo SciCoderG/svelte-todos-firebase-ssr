@@ -26,18 +26,27 @@
 </script>
 
 <div
-	class="navbar sticky z-50 top-0 transition-all duration-100 shadow-md text-primary-content bg-primary"
+	class="navbar sticky z-50 top-0 transition-all duration-100 shadow-md text-primary-content bg-primary flex flex-row"
 	transition:fade
 >
-	<div class="navbar-start" />
-	<div class="navbar-center text-xs" />
+	<div class="flex-none w-12"></div>
+	<div class="flex-1 justify-center">
+		<ul class="menu menu-horizontal">
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+		</ul>
+	</div>
 
-	<div class="navbar-end" />
+	<div class="flex-none" />
 	{#if !$user}
 		<button class="btn btn-primary" on:click={handleLogin}>Login</button>
 	{:else}
 		<div class="dropdown dropdown-end text-base-content">
-			<label for="profile-dropdown" tabindex="-1" class="btn btn-ghost btn-circle avatar">
+			<label
+				for="profile-dropdown"
+				tabindex="-1"
+				class="btn btn-ghost btn-circle avatar"
+			>
 				<div class="w-10 rounded-full">
 					<img alt="profile-pricture" src={$user?.photoURL} />
 				</div>
